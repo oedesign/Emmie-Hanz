@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueGadget Hub | Premium Gadgets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">BlueGadget Hub</a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="cart-link" href="cart.html">🛒 <span data-cart-count>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="pill">Trusted Gadget Store</p>
+        <h1>Premium Gadgets at the Best Prices</h1>
+        <p>Discover iPhones, laptops, accessories, and smart devices with warranty support and fast delivery.</p>
+        <a class="btn" href="shop.html">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Featured Categories</h2>
+        <div class="category-grid">
+          <a href="shop.html?category=iphone" class="category-card">iPhones</a>
+          <a href="shop.html?category=laptop" class="category-card">Laptops</a>
+          <a href="shop.html?category=accessory" class="category-card">Accessories</a>
+          <a href="shop.html?category=smart" class="category-card">Smart Devices</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured Products</h2>
+          <a href="shop.html">View all</a>
+        </div>
+        <div class="product-grid" id="featured-products"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Why Choose Us</h2>
+        <div class="features-grid">
+          <article><h3>Quality Assured</h3><p>Every item is tested and verified before dispatch.</p></article>
+          <article><h3>Fast Delivery</h3><p>Nationwide shipping with swift processing and updates.</p></article>
+          <article><h3>Trusted Seller</h3><p>Transparent policies and genuine customer support.</p></article>
+          <article><h3>Warranty Support</h3><p>Peace of mind through clear warranty coverage.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-banner">
+      <div class="container cta-inner">
+        <h2>Ready to order your next gadget?</h2>
+        <a class="btn btn-outline" target="_blank" rel="noopener" data-whatsapp-chat href="#">Chat with us on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating-whatsapp hidden" data-whatsapp-chat href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> BlueGadget Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | BlueGadget Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header"><div class="container nav-wrap"><a class="logo" href="index.html">BlueGadget Hub</a><button class="menu-toggle" aria-label="Toggle navigation">☰</button><nav class="site-nav"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a><a class="cart-link" href="cart.html">🛒 <span data-cart-count>0</span></a></nav></div></header>
+  <main class="section">
+    <div class="container contact-grid">
+      <form class="card contact-form">
+        <h1>Contact Us</h1>
+        <label>Name<input type="text" required /></label>
+        <label>Email<input type="email" required /></label>
+        <label>Message<textarea rows="5" required></textarea></label>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <aside class="card">
+        <h2>Reach us directly</h2>
+        <p><strong>Phone:</strong> +234 800 000 0000</p>
+        <p><strong>WhatsApp:</strong> <a data-whatsapp-chat href="#" target="_blank" rel="noopener">Start Chat</a></p>
+        <iframe title="Map" src="https://maps.google.com/maps?q=Lagos&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+      </aside>
+    </div>
+  </main>
+  <script src="data.js"></script><script src="app.js"></script>
+</body>
+</html>
